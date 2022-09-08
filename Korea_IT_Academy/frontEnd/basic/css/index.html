@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 반응형은 화면의 크기에 맞게 콘텐츠의 배치가 자동으로 조절된다. -->
+  <!-- 스크롤이 생기지 않는다. -->
+  <!-- 비반응형은 고정된 px값을 많이 사용한다. -->
+
+  <!-- <h1>CSS selector (선택자)</h1>
+  <p>html element를 선택한다. 스타일 속성을 주기 위한 시작단계</p>
+  element, class, id, children, direct children ... -->
+
+  <!-- <style>
+    h1 {
+      font-weight: normal;
+    }
+    p {
+      color: blue;
+    }
+    a {
+      color: red;
+      text-decoration: none;
+    }
+  </style>
+  <h1>Heading 1</h1>
+  <p>Paragraph</p>
+  <a href="">Link</a> -->
+  <!-- # class 선택자 -->
+  <!-- class로 html element를 선택한다. -->
+
+  <!-- <style>
+    div {
+      width: 100px;
+      height: 200px;
+      border: none;
+      display: inline-block;
+    }
+    .oregano {
+      background-color: green;
+    }
+    .mozzarella {
+      background-color: white;
+    }
+    .tomatoSauce {
+      background-color: red;
+    }
+  </style>
+  <div class="oregano"></div>
+  <div class="mozzarella"></div>
+  <div class="tomatoSauce"></div> -->
+
+  <!-- <style>
+    div {
+      width: 100px;
+      height: 100px;
+    }
+    .border {
+      border: 1px dashed;
+    }
+    .red {
+      background-color: red;
+    }
+    .rounded {
+      border-radius: 10px;
+    }
+  </style> -->
+
+  <!-- 띄어쓰기를 해서 클래스를 추가할 수 있다.  -->
+  <!-- <div class="border red rounded">Div</div> -->
+  <!-- <style>
+    .a.b {
+      border: 1px dashed;
+      width: 100px;
+      height: 100px;
+    }
+    .a {
+      background-color: gray;
+    }
+    .b {
+      border-radius: 50%;
+    }
+  </style>
+
+  <div class="a b"></div> -->
+
+  <!-- id 선택자 -->
+  <!-- <style>
+    div {
+      width: 100px;
+      height: 100px;
+      border: 1px dashed;
+    }
+    #foo {
+      background-color: red;
+    }
+    #bar {
+      background-color: blue;
+    }
+    #bar.rounded {
+      border-radius: 50%;
+    }
+  </style>
+
+  <div id="foo" class="rounded">Foo</div>
+
+  <div id="bar" class="rounded">Bar</div> -->
+
+  <!-- 칠드런과 다이렉트 칠드런 선택자 -->
+
+  <!-- <style>
+    .level1 {
+      width: 200px;
+      height: 200px;
+      background-color: lightgray;
+    }
+    .level2 {
+      width: 100px;
+      height: 100px;
+    }
+    .level3 {
+      width: 50px;
+      height: 50px;
+    }
+    .level1 div {
+      border: 1px dashed;
+    }
+    .level1 > div {
+      border-radius: 10px;
+    }
+  </style>
+
+  <div class="level1">
+    <div class="level2">
+      <div class="level3"></div>
+    </div>
+  </div> -->
+  <!-- <style>
+    #foo, #bar {
+      border: 1px dashed;
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+  <div id="foo">Foo</div>
+  <div id="bar">Bar</div> -->
+
+  <!-- <style>
+    * {
+      text-align: center;
+      border: 1px dashed;
+    }
+    html, body {
+      border: none;
+    }
+  </style>
+
+  <h1>Heading</h1>
+  <p>Paragraph</p>
+  <small>Small</small> -->
+  <!-- <style>
+    button {
+      padding: 10px;
+      background-color: #888;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #555;
+    }
+    input[type=text] {
+      padding: 10px;
+    }
+    input[type=text]:focus {
+      outline: 5px solid red;
+    }
+
+  </style>
+
+  <button>Button</button>
+  <hr>
+  <input type="text"> -->
+
+
+  <!-- <style>
+    ul li {
+      font-weight: normal;
+    }
+    ul li:first-child {
+      font-weight: bold;
+    }
+    ul li:nth-child(2) {
+      text-decoration: underline;
+    }
+  </style>
+  <h1>List</h1>
+  <ul>
+    <li>item 1</li>
+    <li>item 2</li>
+    <li>item 3</li>
+  </ul> -->
+
+
+  <!-- <style>
+    .container {
+      border: 1px dashed;
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+    }
+    .container::after {
+      content: "Square";
+      background-color: #888;
+    }
+    span {
+      background-color: red;
+    }
+  </style>
+
+  <div class="container">
+    <span>@</span>
+    <span>@</span>
+  </div>
+
+  <div class="container">
+    <span>@</span>
+    <span>@</span>
+  </div>
+
+  <div class="container">
+    <span>@</span>
+    <span>@</span>
+  </div>
+
+  <div class="container">
+    <span>@</span>
+    <span>@</span>
+  </div> -->
+
+  <!-- 1 absolute length(절대값) -->
+  <!-- px cm -->
+  <!-- 2 relative length(상대값) -->
+  <!-- rem em % vh vw -->
+
+  <!-- <style>
+    .container {
+      width: 100px;
+      height: 100px;
+      border: 1px dashed;
+    }
+  </style>
+  <div class="container"></div> -->
+
+
+  <!-- <style>
+    .container {
+      font-size: 10px;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    small {
+      font-size: 0.8em;
+    }
+  </style>
+  <div class="container">
+    <h1>Heading 1</h1>
+    <p>Paragraph</p>
+    <small>Small</small>
+  </div> -->
+  <!-- <style>
+    .red {
+      color: red;
+    }
+    .italic {
+      font-style: italic;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    .light {
+      font-weight: 200;
+    }
+    .small {
+      font-size: small;
+    }
+  </style>
+
+  <p class="red">Paragraph</p>
+  <p class="italic">Paragraph</p>
+  <p class="bold">Paragraph</p>
+  <p class="light">Paragraph</p>
+  <p class="small">Paragraph</p>
+  <p>Paragraph</p> -->
+
+
+  <!-- <style>
+    .text-start {
+      text-align: left;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .text-end {
+      text-align: right;
+    }
+    .text-shadow {
+      text-shadow: 2px 2px #ddd;
+    }
+    .text-distant {
+      letter-spacing: 10px;
+    }
+    .uppercasse {
+      text-transform: uppercase;
+    }
+    .capitalize {
+      text-transform: capitalize;
+    }
+    .leading-relaxd {
+      line-height: 2rem;
+    }
+  </style>
+
+  <p class="text-start">Paragraph</p>
+  <p class="text-center">Paragraph</p>
+  <p class="text-end">Paragraph</p>
+  <p class="text-shadow">Paragraph</p>
+  <p class="text-distant">Paragraph</p>
+  <p class="capitalize">Paragraph</p>
+  <p class="uppercasse">Paragraph</p>
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+     Consequatur voluptate eligendi, rerum consectetur aliquid 
+     fuga aut esse maiores dignissimos! Sequi dolor temporibus
+      odio delectus hic ratione placeat rerum. Placeat, excepturi!
+    </p>
+  <p class="leading-relaxd">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+     Consequatur voluptate eligendi, rerum consectetur aliquid 
+     fuga aut esse maiores dignissimos! Sequi dolor temporibus
+      odio delectus hic ratione placeat rerum. Placeat, excepturi!
+    </p> -->
+  <!-- <style>
+    div {
+      width: 100px;
+      height: 100px;
+      border-width: 1px;
+      border-style: dashed;
+      border-color: #000;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .border-8 {
+      /* border의 굵기 */
+      border-width: 8px;
+    }
+    .border-x-8 {
+      /* x: 왼쪽, 오른쪽 */
+      border-left-width: 8px;
+      border-right-width: 8px;
+    }
+    .border-dotted {
+      border-width: 8px;
+      border-style: dotted;
+    }
+    .border-solid {
+      border-style: solid;
+    }
+    .border-red {
+      border-color: red;
+    }
+    .border-b-8 {
+      /* border direction */
+      /* border-top */
+      /* border-left; */
+      /* border-bottom; */
+      /* border-right; */
+      border-bottom-width: 8px;
+    }
+    .border-top {
+      /* shorthand(간단히 쓰기) */
+      /* border: width style color */
+      /* direction이 없으면 전체에 적용된다(top, left, bottom, right) */
+      border-top: 8px solid blue;
+    }
+    .border {
+      /* shorthand */
+      border: 1px solid #ddd;
+    }
+  </style>
+  
+  <div class="border-8">border-8</div>
+  <div class="border-x-8">border-x-8</div>
+  <div class="border-dotted">border-style: dotted</div>
+  <div class="border-solid">border-style: solid</div>
+  <div class="border-red">border-color: red</div>
+  <div class="border-b-8"></div>
+  <div class="border-top"></div>
+  <div class="border"></div> -->
+
+  <!-- <style>
+    div {
+      width: 100px;
+      height: 100px;
+      border: 1px dashed;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .p-2 {
+      padding: 0.5rem;
+    }
+    .px-2 {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    .py-2 {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    .pl-2 {
+      padding-left: 0.5rem;
+    }
+    .pr-2 {
+      padding-right: 0.5rem;
+    }
+    .pt-2 {
+      padding-top: 0.5rem;
+    }
+    .pb-2 {
+      padding-bottom: 0.5rem;
+    }
+    .px-shorthand-2 {
+      /* 두가지 값을 적용하는 경우 */
+      /* top/bottom left/right */
+      padding: 0 0.5rem;
+    }
+    .py-shorthand-2 {
+      padding: 0.5rem 0;
+    }
+    .pl-shorthand-2 {
+      /* 네가지 값을 적용하는 경우 */
+      /* top right bottom left */
+      padding: 0 0 0 0.5rem;
+    }
+    .pr-shorthand-2 {
+      padding: 0 0.5rem 0 0;
+    }
+  </style>
+  <div class="p-2"></div>
+  <div class="px-2"></div>
+  <div class="py-2"></div>
+  <div class="pl-2"></div>
+  <div class="pr-2"></div>
+  <div class="pt-2"></div>
+  <div class="pb-2"></div>
+  <div class="px-shorthand-2">padding: 0 0.5rem</div>
+  <div class="py-shorthand-2">padding: 0.5rem 0</div>
+  <div class="pl-shorthand-2">padding: 0 0 0 0.5rem</div>
+  <div class="pr-shorthand-2">padding: 0 0.5rem 0 0</div>
+  <div class="px-2 py-2">px-2 py-2</div>
+  <div class="px-shorthand-2 py-shorthand-2">
+    px-shorthand-2 py-shorthand-2
+  </div>
+  <div class="" style="padding: 0.5rem 0 0">
+    padding: 0.5rem 0 0;
+  </div> -->
+  <!-- <style>
+    div {
+      width: 100px;
+      height: 200px;
+      border: 1px dashed;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .m-2 {
+      margin: 0.5rem;
+    }
+    .m1-2 {
+      margin-left: 0.5rem;
+    }
+    .my-2 {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+
+  <div class="m-2"></div>
+  <div class="m1-2"></div>
+  <div class="my-2"></div> -->
+
+  <!-- <style>
+    div {
+      display: inline-block;
+      border: 1px dashed;
+      width: 100px;
+      height: 100px;
+    }
+    .mr-2 {
+      margin-right: 0.5rem;
+    }
+    .m1-2 {
+      margin-left: 0.5rem;
+    }
+  </style>
+  <div class="mr-2"></div>
+  <div class="m1-2"></div> -->
+
+  <!-- <style>
+    div {
+      width: 100px;
+      height: 100px;
+      border: 1px dashed;
+    }
+    .mb-2 {
+      margin-bottom: 0.5rem;
+    }
+    .mt-2 {
+      margin-top: 0.5rem;
+    }
+  </style>
+  <div class="mb-2"></div>
+  <div class="mt-2"></div> -->
+
+
+  <!-- <style>
+    div {
+      width: 100px;
+      height: 100px;
+      border: 1px dashed;
+      display: inline-block;
+      padding: 10px;
+    }
+    .content-box {
+      box-sizing: content-box;
+    }
+    .border-box {
+      box-sizing: border-box;
+    }
+  </style>
+  <div class=""></div>
+  <div class="content-box"></div>
+  <div class="border-box"></div> -->
+
+
+  <!-- <style>
+    button, div, span {
+      border: 1px dashed;
+      padding: 10px;
+      margin: 10px;
+    }
+    hr {
+      margin: 0px;
+    }
+    div {
+      
+    }
+    span {
+      
+    } -->
+  <!-- /* </style>
+  <button>Button</button>
+  <button>Button</button>
+
+  <hr>
+
+  <div class="">Div</div>
+  <div class="">Div</div>
+
+  <hr>
+
+  <span>Span</span>
+  <span>Span</span> */ -->
+  
+
+
+<!-- <style>
+  .container div {
+    width: 100px;
+    height: 100px; 
+    border: 1px dashed;
+  }
+  .default {}
+  .block {
+    display: block;
+  }
+  .none {
+    /* display: none; */
+  }
+</style>
+  <div class="container">
+    <div class="default">default</div>
+    <div class="none">none</div>
+    <div class="block">block</div>
+  </div> -->
+
+
+  <!-- <style>
+    div {
+      border: 1px dashed;
+      width: auto;
+      height: auto;
+    }
+    .normal {
+      white-space: normal;
+    }
+    .nowrap {
+      white-space: nowrap;
+    }
+    .pre-line {
+      white-space: pre-line;
+    }
+  </style>
+  <div class="normal">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Aspernatur, maiores enim. Magni illo numquam inventore 
+    quidem nostrum cumque esse odio aspernatur quibusdam placeat. Asperiores tempora numquam necessitatibus at pariatur incidunt!
+  </div>
+  <div class="nowrap">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Ipsam, quis inventore! Perspiciatis debitis architecto 
+    porro odio assumenda magnam, natus ad error quo dolor
+    tenetur provident, magni aspernatur itaque voluptatem 
+    eligendi.
+  </div>
+  <div class="pre-line">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Necessitatibus nobis vitae possimus ipsum sunt explicabodolor nulla.
+    Molestiae porro voluptas doloremque fugitquos voluptatem.
+    Fugiat debitis amet suscipit nequeveniam!
+  </div> -->
+
+  <!-- <style>
+    .container div {
+      width: 100px;
+      height: 100px;
+      border: 1px dashed;
+    }
+    .visible {
+      visibility: visible;
+    }
+    .hidden {
+      visibility: hidden;
+    }
+  </style>
+  <div class="container">
+    <div class="default">default</div>
+    <div class="hidden">hidden</div>
+    <div class="visible">visible</div>
+  </div> -->
+
+
+  <!-- <style>
+    div {
+      width: 100px;
+      height: 100px;
+      border: 1px dashed;
+      display: inline-block;
+      vertical-align: top;
+      /* word-break: break-all; */
+    }
+    .hidden {
+      overflow: hidden;
+    }
+    .scroll {
+      overflow: scroll;
+    }
+    .auto {
+      overflow: auto;
+    }
+    .visible {
+      overflow: visible;
+    }
+  </style>
+  <div class="hidden">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quasi consectetur porro veniam ullam. Delectus iure molestias nisi ratione, exercitationem sint ex, impedit, provident temporibus sunt similique voluptatum quo vel.
+  </div>
+  <div class="scroll">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quasi consectetur porro veniam ullam. Delectus iure molestias nisi ratione, exercitationem sint ex, impedit, provident temporibus sunt similique voluptatum quo vel.
+  </div>
+  <div class="auto">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quasi consectetur porro veniam ullam. Delectus iure molestias nisi ratione, exercitationem sint ex, impedit, provident temporibus sunt similique voluptatum quo vel.
+  </div>
+  <div class="visible">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quasi consectetur porro veniam ullam. Delectus iure molestias nisi ratione, exercitationem sint ex, impedit, provident temporibus sunt similique voluptatum quo vel.
+  </div> -->
+
+  <!-- 0729 강좌 -->
+
+  <!-- <style>
+    .flex {
+      background-color: #ddd;
+      display: flex;
+    }
+    .item {
+      border: 1px dashed;
+      width: 100px;
+      height: 100px;
+    }
+    .flex-row {
+      flex-direction: row;
+    }
+    .flex-col {
+      flex-direction: column;
+    }
+  </style>
+  <div class="flex flex-row">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <hr>
+  <div class="flex flex-col">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div> -->
+
+<!-- 
+  <style>
+    .flex {
+      display: flex;
+      background-color: #ddd;
+    }
+    .item {
+      border: 1px dashed;
+      width: 200px;
+      height: 100px;
+    }
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+    .flex-nowrap {
+      flex-wrap: nowrap;
+    }
+  </style>
+
+
+  <div class="flex flex-wrap">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+
+  <hr>
+
+
+  <div class="flex flex-nowrap">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div> -->
+
+
+  <!-- <style>
+    .flex {
+      display: flex;
+      background-color: #ddd;
+    }
+    .item {
+      border: 1px dashed;
+      width: 100px;
+      height: 100px;
+    }
+    .justify-start {
+      justify-content: flex-start;
+    }
+    .justify-center {
+      justify-content: center;
+    }
+    .justify-between {
+      justify-content: space-between;
+    }
+  </style>
+
+
+  <div class="flex justify-start">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <hr>
+  <div class="flex justify-center">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <hr>
+  <div class="flex justify-between">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div> -->
+  <!-- <style>
+    .flex {
+      display: flex;
+      background-color: #ddd;
+      height: 100px;
+    }
+    .item {
+      border: 1px dashed;
+      width: 50px;
+      height: auto;
+    }
+    .align-stretch {
+      align-items: stretch;
+    }
+    .align-baseline {
+      align-items: baseline;
+    }
+    .align-center {
+      align-items: center;
+    }
+  </style>
+
+
+  <div class="flex align-stretch">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <hr>
+  <div class="flex align-baseline">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+  <hr>
+  <div class="flex align-center">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div> -->
+  <div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus iusto blanditiis libero, unde distinctio, nesciunt assumenda officia qui, mollitia non nostrum exercitationem minus cumque nisi laborum nam nihil ad excepturi?</p>
+  </div>
+
+
+
+
+</body>
+
+</html>

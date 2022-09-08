@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <style>
+        body {
+            margin: 0;
+        }
+        .wrap {
+            background-color: #222;
+        }
+        h1 {
+            text-align: center;
+        }
+        p {
+            color: #888;
+        }
+        .container {
+            max-width: 540px;
+            margin: auto;
+            color: white;
+            padding : 3rem 1rem;
+        }
+    </style>
+    <div class="wrap">
+        <div class="container">
+            <h1>Layout: row</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur
+                 adipisicing elit. Tenetur, iusto ipsam!
+                  Explicabo asperiores illum inventore 
+                  doloribus necessitatibus quisquam iusto 
+                  libero? Delectus ipsam hic maxime magnam,
+                   eum necessitatibus quam nihil alias.</p>
+        </div>
+    </div> -->
+
+    <!-- <style>
+        .container {
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            max-width: 740px;
+            margin: 0 auto;
+            padding: 3rem 1rem;
+            flex-direction: column;
+        }
+        .item:nth-child(2) {
+            width: 300px;
+            height: 300px;
+            background-color: #ddd;
+            flex-shrink: 0;
+            margin-left: 1rem;
+        }
+        @media (min-width: 560px) {
+            .container {
+                flex-direction: row;
+            }
+        }
+    </style>
+    
+
+    <div class="wrap">
+        <div class="container">
+            <div class="item">
+                <h1>Heading</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur
+                     adipisicing elit. Tenetur, iusto ipsam!
+                      Explicabo asperiores illum inventore 
+                      doloribus necessitatibus quisquam iusto 
+                      libero? Delectus ipsam hic maxime magnam,
+                       eum necessitatibus quam nihil alias.</p>
+            </div>
+            <div class="item"></div>
+        </div>
+    </div> -->
+
+    <!-- <style>
+        .container {
+            display: flex;
+            max-width: 740px;
+            border-top: 1px solid #ddd;
+            margin : 0 auto;
+            flex-wrap: wrap;
+        }
+        .item {
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        @media (min-width: 640px) {
+            .item {
+                width: 50%;
+            }
+            
+        }
+        @media (min-width: 768px) {
+            .item {
+                width: 25%;
+            }
+            
+        }
+    </style>
+    <h1>flex with width</h1>
+    <div class="container">
+        <div class="item">
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="item">
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="item">
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="item">
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="item">
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="item">
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="item">
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="item">
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div> -->
+    <!-- <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 740px;
+            margin: 0 auto;
+        }
+        .item {
+            width: 100%;
+            padding: 0 1rem;
+            box-sizing: border-box;
+        }
+        @media (min-width: 640px) {
+            .item {
+                width: 50%;
+            }
+        }
+
+    </style>
+    <h1>flex-warp: warp</h1>
+    <div class="container">
+        <div class="item">
+            <h2>Heading</h2>
+            <ul>
+                <li>List item</li>
+                <li>List item</li>
+                <li>List item</li>
+            </ul>
+        </div>
+        <div class="item">
+            <h2>Heading</h2>
+            <ul>
+                <li>List item</li>
+                <li>List item</li>
+                <li>List item</li>
+            </ul>
+        </div>
+        <div class="item">
+            <h2>Heading</h2>
+            <ul>
+                <li>List item</li>
+                <li>List item</li>
+                <li>List item</li>
+            </ul>
+        </div>
+    </div> -->
+
+    <!-- <style>
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .container {
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+        }
+    </style>
+    <h1>Basic Thumbnails</h1>
+    
+    <div class="container">
+        <img src="../img/car1.jpg" alt="">
+    </div> -->
+    <!-- <style>
+        img {
+            height: inherit;
+            width: inherit;
+            object-fit: cover;
+        }
+        .container {
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+            position: relative;
+        }
+        .item {
+            display: flex;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 25%;
+            background-color: rgba(0 0 0 / 0.5);
+            color: white;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: 500ms;
+        }
+        .container:hover .item {
+            opacity: 1;
+        }
+    </style>
+
+    <h1>Overlay thumbnails</h1>
+    <div class="container">
+        <div class="item">Dream Car</div>
+        <img src="../img/car1.jpg" alt="">
+    </div> -->
+
+
+    <!-- <style>
+        .container {
+            display: flex;
+            height: 250px;
+            position: relative;
+            background-color: #ddd;
+            background-image: url(../img/car1.jpg);
+            background-position: center;
+            background-size: cover;
+            align-items: center;
+            justify-content: center;
+            filter: grayscale(50%);
+        }
+        .item {
+            position: absolute;
+            width: 50%;
+            color: white;
+            background-color: rgba(0 0 0 / 0.7);
+        }
+    </style>
+    <div class="container">
+        <div class="item">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+    </div> -->
+<!-- 
+    <style>
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid;
+            border-top: 5px solid transparent;
+            border-radius: 50%;
+            animation-name: spin;
+            animation-duration: 1500ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            } to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+    <h1>Spinner</h1>
+    <div class="spinner"></div> -->
+
+
+    <!-- <style>
+        .container {
+            width: 200px;
+            height: 10px;
+            background-color: #ddd;
+        }
+        .item {
+            height: 100%;
+            background-color: #333;
+            animation: fill 2s infinite;
+        }
+
+        @keyframes fill {
+            from {
+                width: 0;
+            } to {
+                width: 100%;
+            }
+        }
+    </style>
+    <h1>Progress Bar</h1>
+    <div class="container">
+        <div class="item"></div>
+    </div> -->
+    
+
+    <!-- <style>
+        .container {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .container .item {
+            width: 50px;
+            height: 4px;
+            background-color: #000;
+            transition: 500ms;
+        }
+        .container:hover .item:nth-child(1) {
+            transform: translateY(23px) rotate(45deg);
+        }
+        .container:hover .item:nth-child(2) {
+            opacity: 0;
+        }
+        .container:hover .item:nth-child(3) {
+            transform: translateY(-23px) rotate(-45deg);
+        }  </style>
+
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div> -->
+
+<!-- 
+    <style>
+        body {
+            position: relative;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+        }
+        body > .item {
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: orangered;
+            border-radius: 50%;
+            box-shadow: 0 0 50px 10px red;
+        }
+        .container {
+            width: 600px;
+            height: 600px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: orbit 10s infinite linear;
+        }
+        .container .item {
+            width: 10px;
+            height: 10px;
+            background-color: dodgerblue;
+            border-radius: 50%;
+            box-shadow: 0 0 50px 10px skyblue;
+        }
+
+        @keyframes orbit {
+            from {
+                transform: translate(-50%, -50%) rotate(0deg);
+            } to {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+    </style>
+    <div class="item"></div>
+    <div class="container">
+        <div class="item"></div>
+    </div> -->
+
+
+    <style>
+        body {
+            margin: 0;
+        }
+        .wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #333;
+        }
+        .container {
+            display: inline-flex;
+            gap: 0.5rem;
+            align-items: center;
+            margin: auto auto;
+        }
+        .item {
+            width: 25px;
+            height: 70px;
+            background-color: white;
+            animation: wave 0.6s infinite linear alternate;
+        }
+        .item:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+        .item:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes wave {
+            from {
+                height: 70px;
+            } to {
+                height: 150px;
+            }
+            
+        }
+    </style>
+    <div class="wrap">
+        <div class="container">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </div>
+
+
+</body>
+</html>
