@@ -15,10 +15,10 @@
     </style>
     <!-- SEARCH BAR -->
     <div class="wrap">
-        <div class="flex items-center justify-center h-[160px]">
-            <div class="pb-1 text-[50px] mr-4 text-green-500 font-bold">NEVER</div>
-            <form class="flex items-center h-[52px]" action="">
-                <input class="border-2 h-full w-[460px] focus:shadow-md outline-none border-green-500" type="text">
+        <div class="flex items-center h-[160px]">
+            <form class="relative mx-auto flex items-center h-[52px]" action="">
+                <div class="ml-[-180px] absolute pb-1 text-[50px] mr-4 text-green-500 font-bold">NEVER</div>
+                <input class="p-3 border-2 h-full w-[530px] focus:shadow-md outline-none border-green-500" type="text">
                 <button class="h-full w-[56px] bg-green-500 text-white font-semibold">검색</button>
             </form>
         </div>
@@ -43,23 +43,6 @@
                     <label for="moreBtn" class="text-sm font-normal hover:underline" onclick="">더보기<div class="ml-2 font-black origin-center rotate-90 inline-block">></div></label>
                 </li>
             </ul>
-            <!-- <div class="flex mx-auto w-[1190px] items-center justify-between h-full font-semibold">
-                <a class=" text-green-500" href="#">MENU</a>
-                <a class=" text-green-500" href="#">MENU</a>
-                <a class=" text-green-500" href="#">MENU</a>
-                <a class=" text-green-500" href="#">MENU</a>
-                <a class=" text-green-500" href="#">MENU</a>
-                <a class="" href="#">MENU</a>
-                <a class="" href="#">MENU</a>
-                <a class="" href="#">MENU</a>
-                <a class="" href="#">MENU</a>
-                <a class="" href="#">MENU</a>
-                <a class="" href="#">MENU</a>
-                <a class="" href="#">MENU</a>
-                <a class="" href="#">MENU</a>
-                <a class="" href="#">MENU</a>
-                <a class="text-sm font-normal hover:underline" href="#">더보기<div class="ml-2 font-black origin-center rotate-90 inline-block">></div></a> -->
-            </div>
         </div>
         <!-- MAIN -->
         <div class="flex py-[20px] px-[30px] w-[1190px] mx-auto justify-between">
@@ -67,14 +50,17 @@
                 <div class="h-[135px] mb-3">
                     <img class="object-cover w-full h-full" src="../basic/img/car1.jpg" alt="">
                 </div>
-                <div class="text-sm h-[49px] border p-3 bg-gray-100 mb-3">뉴스</div>
+                <div class="text-sm h-[49px] border p-3 bg-gray-100 mb-3">뉴스<span class="mx-2">></span>"뉴스 제목"</div>
                 <div class="">뉴스 스탠드</div>
                 <div class="">뉴스 그리드</div>
             </div>
             <!-- LOGIN -->
-            <div class="w-[350px]">
-                <div class="h-[135px] border">
-                    LOGIN
+            <div class="flex flex-col w-[350px]">
+                <div class="flex items-center justify-center h-[135px] border bg-gray-100">
+                    <button class="bg-green-500 text-white flex flex-row items-center justify-center border w-[315px] h-[50px]">
+                        <span class="font-bold mr-1">NEVER</span>
+                        <span class="font-semibold text-sm">로그인</span>
+                    </button>
                 </div>
             </div>
         </div>
