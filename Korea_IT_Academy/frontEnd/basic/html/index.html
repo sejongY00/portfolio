@@ -1,106 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+  <body style="min-height: 5000px">
+    <!-- header : semantic tag(element의 이름이 목적을 의미한다) -->
+    <header>
+      <!-- heading : 제목을 작성할 때 주로 쓴다. -->
+      <h1>현대자동차 공식홈페이지</h1>
+      <!-- p : paragraph : 문장을 작성한다. -->
+      <p>당신의 모든 세상</p>
+    </header>
 
-<body style="min-height: 5000px;">
-  <!-- header : semantic tag(element의 이름이 목적을 의미한다) -->
-  <header>
-    <!-- heading : 제목을 작성할 때 주로 쓴다. -->
-    <h1>현대자동차 공식홈페이지</h1>
-    <!-- p : paragraph : 문장을 작성한다. -->
-    <p>당신의 모든 세상</p>
-  </header>
+    <nav>
+      <h2>메뉴</h2>
+      <!-- ul : unordered list 순서가 중요하지 않은 리스트를 만든다. -->
+      <ul>
+        <!-- li list item 리스트의 아이템을 만든다. -->
+        <li>
+          <!-- a : anchor 링크를 만든다. -->
+          <a href="">현대자동차 쇼케이스</a>
+        </li>
+        <li>
+          <a href="">모델 소개</a>
+        </li>
+        <li>
+          <a href="">모델 비교표</a>
+        </li>
+        <li>
+          <a href="">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- hr : horizontal rule 수평선  -->
+    <hr />
+    <!-- main : main contents 가 주로 온다. -->
+    <main>
+      <!-- 현대자동차 쇼케이스 -->
+      <section>
+        <h2>현대자동차 쇼케이스</h2>
+        <iframe
+          width="800"
+          height="450"
+          src="https://www.youtube.com/embed/QDP2Otyb9EI"
+          title="IONIQ 6 | 디지털 월드 프리미어 | 현대자동차"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <!-- 모델소개 -->
+      <section>
+        <h2>모델 소개</h2>
+        <article>
+          <h3>제네시스</h3>
+          <div>
+            <img width="800" height="450" src="..\img\car1.jpg" alt="" />
+            <p>
+              <span style="font-weight: bold"
+                >Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span
+              >
+              <br />
+              Assumenda mollitia necessitatibus quasi cumque. Ipsum ducimus,
+              <br />
+              illo consectetur debitis officia nulla odio mollitia explicabo
+              <br />
+              et earum cupiditate natus, asperiores molestias accusamus?
+            </p>
+          </div>
+        </article>
 
-  <nav>
-    <h2>메뉴</h2>
-    <!-- ul : unordered list 순서가 중요하지 않은 리스트를 만든다. -->
-    <ul>
-      <!-- li list item 리스트의 아이템을 만든다. -->
-      <li>
-        <!-- a : anchor 링크를 만든다. -->
-        <a href="">현대자동차 쇼케이스</a>
-      </li>
-      <li>
-        <a href="">모델 소개</a>
-      </li>
-      <li>
-        <a href="">모델 비교표</a>
-      </li>
-      <li>
-        <a href="">Contact</a>
-      </li>
-    </ul>
-  </nav>
-  <!-- hr : horizontal rule 수평선  -->
-  <hr>
-  <!-- main : main contents 가 주로 온다. -->
-  <main>
-    <!-- 현대자동차 쇼케이스 -->
-    <section>
-      <h2>현대자동차 쇼케이스</h2>
-      <iframe width="800" height="450" src="https://www.youtube.com/embed/QDP2Otyb9EI"
-        title="IONIQ 6 | 디지털 월드 프리미어 | 현대자동차" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    </section>
-    <!-- 모델소개 -->
-    <section>
-      <h2>모델 소개</h2>
-      <article>
-        <h3>제네시스</h3>
-        <div>
-          <img width="800" height="450" src="..\img\car1.jpg" alt="">
-          <p>
-            <span style="font-weight: bold;">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
-            <br>
-            Assumenda mollitia necessitatibus quasi cumque. Ipsum ducimus,
-            <br>
-            illo consectetur debitis officia nulla odio mollitia explicabo
-            <br>
-            et earum cupiditate natus, asperiores molestias accusamus?
-          </p>
-        </div>
-      </article>
+        <article>
+          <h3>스타리아</h3>
+          <div>
+            <img width="800" height="450" src="..\img\car2.jpg" alt="" />
+            <p>
+              <span style="font-weight: bold"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.</span
+              >
+              <br />
+              Eveniet molestias inventore modi maxime ratione dolorum neque
+              <br />
+              velit, sit culpa eum impedit doloribus, voluptas architecto
+              <br />
+              a sed repellat minima repudiandae ipsa!
+            </p>
+          </div>
+        </article>
 
-      <article>
-        <h3>스타리아</h3>
-        <div>
-          <img width="800" height="450" src="..\img\car2.jpg" alt="">
-          <p>
-            <span style="font-weight: bold;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-            <br>
-            Eveniet molestias inventore modi maxime ratione dolorum neque
-            <br>
-            velit, sit culpa eum impedit doloribus, voluptas architecto
-            <br>
-            a sed repellat minima repudiandae ipsa!
-          </p>
-        </div>
-      </article>
-
-      <article>
-        <h3>캐스퍼</h3>
-        
-      </article>
-
-
-    </section>
-    <!-- 모델 비교표 -->
-    <section>
-      <h2>모델 비교표</h2>
-    </section>
-    <!-- contact -->
-    <section>
-      <h2>Contact</h2>
-    </section>
-  </main>
-
-</body>
-
+        <article>
+          <h3>캐스퍼</h3>
+        </article>
+      </section>
+      <!-- 모델 비교표 -->
+      <section>
+        <h2>모델 비교표</h2>
+      </section>
+      <!-- contact -->
+      <section>
+        <h2>Contact</h2>
+      </section>
+    </main>
+  </body>
 </html>
