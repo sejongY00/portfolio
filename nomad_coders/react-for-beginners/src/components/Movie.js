@@ -4,20 +4,20 @@ import { Link } from "react-router-dom";
 function Movie({ id, coverImg, title, summary, genres }) {
   return (
     <div>
-      <div className="flex mb-3 max-w-4xl mx-auto">
-        <div className="w-[230px] h-[345px] shrink-0">
+      <div className="">
+        <div className="">
           <img src={coverImg} alt={title} />
         </div>
-        <div className="flex flex-col justify-between ml-2 w-full">
+        <div className="">
           <div>
-            <h1 className="mb-2">
+            <h1 className="">
               <Link to={`/movie/${id}`}>{title}</Link>
             </h1>
             <p>
               {summary.length > 730 ? `${summary.slice(0, 730)} ...` : summary}
             </p>
           </div>
-          <ul className="flex">
+          <ul className="">
             {genres.map((genres) => (
               <li key={genres}>{genres}</li>
             ))}

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import MovieDetail from "../components/MovieDetail";
 
 function Detail() {
   const [loading, setLoading] = useState(true);
@@ -14,6 +15,7 @@ function Detail() {
   };
   useEffect(() => {
     getDetail();
+    //eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <div>
@@ -21,7 +23,14 @@ function Detail() {
         <h1>Loading...</h1>
       ) : (
         <div>
-          <h1>{details.title}</h1>
+          <MovieDetail
+            coverImg={details.medium_cover_image}
+            title={details.title}
+            summary={details.description_full}
+            genres={details.genres}
+            key={details.id}
+            id={details.id}
+          />
         </div>
       )}
     </div>

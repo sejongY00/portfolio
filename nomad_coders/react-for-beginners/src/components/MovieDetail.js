@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+
 function MovieDetail({ id, coverImg, title, summary, genres }) {
   return (
     <div>
@@ -19,7 +20,7 @@ function MovieDetail({ id, coverImg, title, summary, genres }) {
   );
 }
 
-Movie.propTypes = {
+MovieDetail.propTypes = {
   coverImg: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   summary: PropTypes.string.isRequired,
